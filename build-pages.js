@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const html = fs.readFileSync('./docs/index.html').toString();
+const html = fs.readFileSync('./index.html').toString();
 const files = fs.readdirSync('./src/data');
 
 files.forEach(file => {
