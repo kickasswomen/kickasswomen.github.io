@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --config ./webpack.config.js --mode production"
+    "build": "NODE_ENV=production webpack --config ./webpack.config.js --mode production",
+    "postbuild": "react-snap"
+  },
+  "reactSnap": {
+    "source": "docs"
   },
   "keywords": [],
   "author": "",
@@ -16,8 +20,11 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
     "react-hot-loader": "^4.3.3",
+    "react-snap": "^1.19.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.22.1",
     "webpack": "^4.15.1",

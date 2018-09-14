@@ -1,4 +1,7 @@
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
     entry: './src/index.js',
@@ -12,14 +15,19 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    "style-loader", // creates style nodes from JS strings
+                    devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
                     "css-loader", // translates CSS into CommonJS
                     "sass-loader" // compiles Sass to CSS, using Node Sass by default
                 ]
             },
             {
                 test: /\.(png|jpg)$/,
-                use: ['file-loader'],
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                    },
+                }],
             },
             {
                 test: /\.md$/,
@@ -43,10 +51,14 @@ module.exports = {
         filename: 'bundle.js'
     },
     plugins: [
-        new webpack.HotModuleReplacementPlugin()
+        new webpack.HotModuleReplacementPlugin(),
+        new HtmlWebpackPlugin({ template: './src/index.html' }),
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+        }),
     ],
     devServer: {
-        contentBase: './docs',
+        contentBase: './src',
         hot: true
     }
 };

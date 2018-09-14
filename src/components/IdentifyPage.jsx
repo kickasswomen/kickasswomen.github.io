@@ -19,10 +19,7 @@ export class IdentifyPage extends React.Component {
         document.querySelector('title').innerHTML = pageTitle;
         document.querySelector('[property="og:title"]').setAttribute('content', pageContent);
         document.querySelector('[property="og:description"]').setAttribute('content', pageContent);
-
-        // Do it
-        // document.querySelector('[property="og:image"]').setAttribute('content', '');
-
+        document.querySelector('[property="og:image"]').setAttribute('content', image || '');
         document.querySelector('[property="og:url"]').setAttribute('content', window.location.href);
     }
 

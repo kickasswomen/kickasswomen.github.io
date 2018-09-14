@@ -1,6 +1,7 @@
 import data from '../data';
 import React from 'react';
 import IdentifyPage from './IdentifyPage';
+import { Redirect } from 'react-router-dom';
 
 const strip = (html) => {
    var tmp = document.createElement('div');
@@ -8,13 +9,19 @@ const strip = (html) => {
    return (tmp.textContent || tmp.innerText || '').replace(/\r|\n/g, ' ');
 };
 
-export const DetailsView = ({ female }) => (
-    <div className="details main-content">
-        <IdentifyPage title={female.name} content={strip(female.content)} />
-        <h2>{female.name}</h2>
-        <div dangerouslySetInnerHTML={{ __html: female.content }} />
-    </div>
-);
+export const DetailsView = ({ female }) => {
+    if (!female) {
+        return <Redirect to="/" />;
+    }
+
+    return (
+        <div className="details main-content">
+            <IdentifyPage title={female.name} content={strip(female.content)} image={`/${female.identity}.jpg`} />
+            <h2>{female.name}</h2>
+            <div dangerouslySetInnerHTML={{ __html: female.content }} />
+        </div>
+    );
+};
 
 export default props => <DetailsView
     {...data}
