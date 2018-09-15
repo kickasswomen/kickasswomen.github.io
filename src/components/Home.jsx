@@ -25,6 +25,7 @@ export const Home = ({ females }) => (
                 </li>
             ))}
         </ul>
+        <div className="clearfix" />
     </div>
 );
 

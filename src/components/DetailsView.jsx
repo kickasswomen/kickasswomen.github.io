@@ -18,7 +18,9 @@ export const DetailsView = ({ female }) => {
         <div className="details main-content">
             <IdentifyPage title={female.name} content={strip(female.content)} image={`/${female.identity}.jpg`} />
             <h2>{female.name}</h2>
-            <div dangerouslySetInnerHTML={{ __html: female.content }} />
+            <div className="report-wrapper">
+                <div dangerouslySetInnerHTML={{ __html: female.content }} />
+            </div>
         </div>
     );
 };

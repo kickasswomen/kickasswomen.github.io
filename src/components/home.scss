@@ -10,13 +10,13 @@
         }
         li {
             float: left;
-            width: 33%;
+            width: 25%;
             position: relative;
             overflow: hidden;
             img {
                 transition: 0.2s opacity ease;
                 width: 101%;
-                opacity: 0.8;
+                opacity: 0.7;
                 display: block;
             }
             h3 {
@@ -36,7 +36,7 @@
             &:hover {
                 img {
                     transition: 0.2s opacity ease;
-                    opacity: 0.6;
+                    opacity: 1;
                 }
                 h3 {
                     transition: 0.2s opacity ease;
