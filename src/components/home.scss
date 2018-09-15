@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .home {
     ul {
         margin-top: 1.5em;
@@ -29,7 +31,7 @@
                 margin-bottom: 0.5em;
                 max-width: 90%;
                 span {
-                    background: rgba(235, 104, 150, 0.9);
+                    background: rgba($primary, 0.9);
                     padding: 0.2em;
                 }
             }

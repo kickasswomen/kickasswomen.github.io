@@ -8,9 +8,9 @@ export const Home = ({ females }) => (
     <div className="home main-content">
         <IdentifyPage />
         <p className="intro">
-            This year, over at <a href="https://www.researchsquare.com/" target="__blank">ResearchSquare</a>, I had&nbsp;
+            This year, over at <a href="https://www.researchsquare.com/" target="__blank">ResearchSquare</a>, I had
             the pleasure of learning and writing about amazing, influential, kick-ass women for 26 straight&nbsp;
-            <a href="https://en.wikipedia.org/wiki/Scrum_Sprint" target="__blank">sprints</a>. An aggregation&nbsp;
+            <a href="https://en.wikipedia.org/wiki/Scrum_Sprint" target="__blank">sprints</a>. An aggregation
             of awesome follows...
         </p>
         <ul>
