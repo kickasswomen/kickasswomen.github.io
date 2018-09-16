@@ -14,6 +14,9 @@ render(
                 <Route path="/:identity" component={DetailsView} />
                 <Route path="" component={Home} />
             </Switch>
+            <footer>
+                Made with ♥ by <a href="https://scottdover.com" target="_blank">Scott Dover</a>
+            </footer>
         </div>
     </BrowserRouter>,
     document.getElementById('app')

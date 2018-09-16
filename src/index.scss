@@ -34,7 +34,7 @@ p.intro a {
 }
 
 body {
-    background: radial-gradient($primary, $secondary);
+    background: linear-gradient(to right, $primary, $secondary);
     color: #5d5d5d;
     font-family: Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -59,20 +59,19 @@ h1 {
 h2 {
     color: white;
     font-size: 3rem;
+    line-height: 1;
 }
 
 p {
     line-height: 1.6;
     margin-top: 1em;
     img {
-        max-width: 30%;
-        float: left;
-        margin: 0.5em 1.5em 0.5em 0;
+        max-width: 100%;
     }
 }
 
 p.intro, blockquote {
-    background: #f8f2fb;
+    background: linear-gradient(to right, rgba(white, 0.8), lighten($primary, 40%));
     padding: 0.75em;
     color: darken(adjust-hue($secondary, 15), 15%);
     margin: 0.75em 0;
@@ -93,9 +92,9 @@ p.intro {
 
 
 .left-nav {
-    width: 280px;
-    padding: 3rem;
-    float: left;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
     h1 {
         line-height: 1.1;
         text-align: center;
@@ -105,7 +104,7 @@ p.intro {
         span {
             margin-top: 0.5rem;
             padding: 0.5rem 1.2rem;
-            background: rgba($primary, 0.3);
+            background: rgba($secondary, 0.3);
             display: block;
             letter-spacing: 1px;
             &:first-child {
@@ -117,7 +116,7 @@ p.intro {
             color: white;
             &:hover {
                 span {
-                    background: rgba($primary, 0.6);
+                    background: rgba($secondary, 0.6);
                 }
             }
         }
@@ -125,8 +124,9 @@ p.intro {
 }
 
 .main-content {
-    padding-top: 3rem;
-    margin-left: 280px;
+    padding-top: 2rem;
+    margin-left: 0;
+    padding: 1rem;
 }
 
 .details {
@@ -136,7 +136,7 @@ p.intro {
     }
     .report-wrapper div > p {
         color: white;
-        padding-right: 1rem;
+        padding-right: 0;
         a {
             color: white;
         }
@@ -145,6 +145,7 @@ p.intro {
 
 .left-nav {
     ul {
+        display: none;
         list-style-type: none;
         margin-top: 2rem;
     }
@@ -175,6 +176,41 @@ p.intro {
     clear: both;
 }
 
-.container {
-    padding-bottom: 3rem;
+footer {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    padding: 2rem 0;
+}
+
+@media (min-width:760px) {
+    h2 {
+        line-height: 1.4;
+    }
+    p {
+        img {
+            max-width: 30%;
+            float: left;
+            margin: 0.5em 1.5em 0.5em 0;
+        }
+    }
+    .details {
+        .report-wrapper div > p {
+            padding-right: 1rem;
+        }
+    }
+    .main-content {
+        padding: 0;
+        padding-top: 3rem;
+        margin-left: 280px;
+    }
+    .left-nav {
+        padding: 3rem;
+        float: left;
+        width: 280px;
+        text-align: left;
+        ul {
+            display: block;
+        }
+    }
 }
