@@ -1,6 +1,6 @@
 > Each of us brings to our job, whatever it is, our lifetime of experience and our values.
 
-![Sandra Day O'Connor](./maya.jpg)
+![Sandra Day O'Connor](./oconnor.jpg)
 
 Our kick-ass lady of this sprint is Sandra Day O'Connor, the first woman to have served on the supreme court.  This was the result of a pledge made by Ronald Reagan in his 1980 presidential campaign - one of the better decisions the man made. And of course, there was a bit of backlash on this decision by the populous, because Reagan was a republican, and republicans aren't very well known as champions of women in positions of power. She was confirmed by the senate in 1981 with a unanimous vote, served on the supreme court for 25 years (wow!), and was awarded the Presidential Medal of Freedom (2009) as a result of the years of service she devoted to this country.
 
