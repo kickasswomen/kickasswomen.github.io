@@ -14,6 +14,7 @@ render(
                 <Route path="/:identity" component={DetailsView} />
                 <Route path="" component={Home} />
             </Switch>
+            <div className="clearfix" />
             <footer>
                 Made with ♥ by <a href="https://scottdover.com" target="_blank">Scott Dover</a>
             </footer>
