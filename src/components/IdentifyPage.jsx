@@ -21,6 +21,8 @@ export class IdentifyPage extends React.Component {
         document.querySelector('[property="og:description"]').setAttribute('content', pageContent);
         document.querySelector('[property="og:image"]').setAttribute('content', image || '');
         document.querySelector('[property="og:url"]').setAttribute('content', window.location.href);
+
+        window.scrollTo(0, 0);
     }
 
     componentDidUpdate() {

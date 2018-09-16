@@ -2,6 +2,7 @@ import './index.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { render } from 'react-dom';
 import DetailsView from './components/DetailsView';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import LeftNav from './components/LeftNav';
 import React from 'react';
@@ -15,9 +16,7 @@ render(
                 <Route path="" component={Home} />
             </Switch>
             <div className="clearfix" />
-            <footer>
-                Made with ♥ by <a href="https://scottdover.com" target="_blank">Scott Dover</a>
-            </footer>
+            <Route path="/:identity?" component={Footer} /> 
         </div>
     </BrowserRouter>,
     document.getElementById('app')

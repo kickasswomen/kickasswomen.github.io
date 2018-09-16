@@ -1,6 +1,7 @@
-import React from 'react';
-import data from '../data';
 import { Link } from 'react-router-dom';
+import data from '../data';
+import LetterList from './LetterList';
+import React from 'react';
 
 export const LeftNav = ({ female = { identity: null }, females }) => (
     <div className="left-nav">
@@ -10,17 +11,7 @@ export const LeftNav = ({ female = { identity: null }, females }) => (
                 <span>women</span>
             </Link>
         </h1>
-        <ul>
-            {females.map(f => (
-                <li key={f.identity}>
-                    <Link
-                        className={f.identity === female.identity ? 'active': ''}
-                        to={`/${f.identity}`}>
-                        {f.sprint}
-                    </Link>
-                </li>
-            ))}
-        </ul>
+        <LetterList females={females} female={female} />
     </div>
 );
 
