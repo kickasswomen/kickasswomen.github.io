@@ -130,7 +130,7 @@ p.intro {
 }
 
 .details {
-    ul {
+    ul, ol {
         padding-left: 1.25em;
         margin-top: 1em;
         color: white;
@@ -141,6 +141,10 @@ p.intro {
         a {
             color: white;
         }
+    }
+    .report-wrapper ul,
+    .report-wrapper ol {
+        padding-right: 0;
     }
 }
 
@@ -180,7 +184,9 @@ footer {
         }
     }
     .details {
-        .report-wrapper div > p {
+        .report-wrapper div > p,
+        .report-wrapper ul,
+        .report-wrapper ol {
             padding-right: 1rem;
         }
     }
@@ -197,5 +203,15 @@ footer {
         ul {
             display: block;
         }
+    }
+}
+
+.footnotes {
+    margin-top: 1em;
+    padding-top: 0.5em;
+    border-top: 1px solid rgba(white, 0.3);
+    font-size: 1rem;
+    ol {
+        color: rgba(white, 0.8);
     }
 }

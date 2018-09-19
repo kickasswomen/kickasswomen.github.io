@@ -1,7 +1,7 @@
 > There is no reason why the aeroplane should not open up a fruitful occupation for women. I see no reason they cannot realize handsome incomes by carrying passengers between adjacent towns, from parcel delivery, taking photographs or conducting schools of flying.
 Any of these things it is now possible to do.
 
-![Harriet Quimby](./maya.jpg)
+![Harriet Quimby](./quimby.jpg)
 
 Harriet Quimby, our kick-ass woman of this sprint, was an aviator and writer. In her career at Leslie's Illustrated Weekly, she worked as a theater critic, publishing more than 250 articles in a nine-year period. During that time, she attended Belmont Park International Aviation Tournament, which lead to an interest in aviation.
 

@@ -126,5 +126,12 @@ export default {
             photo: require('./roem.jpg'),
             sprint: 'r',
         },
+        {
+            name: 'Gloria Steinem',
+            identity: 'steinem',
+            content: require('./steinem.md'),
+            photo: require('./steinem.jpg'),
+            sprint: 's',
+        },
     ],
 };

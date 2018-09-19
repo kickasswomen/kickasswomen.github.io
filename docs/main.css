@@ -100,7 +100,7 @@ p.intro {
   margin-left: 0;
   padding: 1rem; }
 
-.details ul {
+.details ul, .details ol {
   padding-left: 1.25em;
   margin-top: 1em;
   color: white; }
@@ -110,6 +110,10 @@ p.intro {
   padding-right: 0; }
   .details .report-wrapper div > p a {
     color: white; }
+
+.details .report-wrapper ul,
+.details .report-wrapper ol {
+  padding-right: 0; }
 
 .left-nav ul {
   display: none; }
@@ -135,7 +139,9 @@ footer {
     max-width: 30%;
     float: left;
     margin: 0.5em 1.5em 0.5em 0; }
-  .details .report-wrapper div > p {
+  .details .report-wrapper div > p,
+  .details .report-wrapper ul,
+  .details .report-wrapper ol {
     padding-right: 1rem; }
   .main-content {
     padding: 0;
@@ -148,6 +154,14 @@ footer {
     text-align: left; }
     .left-nav ul {
       display: block; } }
+
+.footnotes {
+  margin-top: 1em;
+  padding-top: 0.5em;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1rem; }
+  .footnotes ol {
+    color: rgba(255, 255, 255, 0.8); }
 
 ul.letter-list {
   list-style-type: none;
