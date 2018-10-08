@@ -133,5 +133,12 @@ export default {
             photo: require('./steinem.jpg'),
             sprint: 's',
         },
+        {
+            name: 'Harriet Tubman',
+            identity: 'tubman',
+            content: require('./tubman.md'),
+            photo: require('./tubman.jpg'),
+            sprint: 't',
+        },
     ],
 };
