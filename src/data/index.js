@@ -140,5 +140,19 @@ export default {
             photo: require('./tubman.jpg'),
             sprint: 't',
         },
+        {
+            name: 'Umm Kulthum',
+            identity: 'umm',
+            content: require('./umm.md'),
+            photo: require('./umm.jpg'),
+            sprint: 'u',
+        },
+        {
+            name: 'Sarah Vaughan',
+            identity: 'vaughan',
+            content: require('./vaughan.md'),
+            photo: require('./vaughan.jpg'),
+            sprint: 'v',
+        },
     ],
 };
