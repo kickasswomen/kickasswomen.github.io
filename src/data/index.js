@@ -154,5 +154,12 @@ export default {
             photo: require('./vaughan.jpg'),
             sprint: 'v',
         },
+        {
+            name: 'Elizabeth Warren',
+            identity: 'warren',
+            content: require('./warren.md'),
+            photo: require('./warren.jpg'),
+            sprint: 'w',
+        },
     ],
 };
