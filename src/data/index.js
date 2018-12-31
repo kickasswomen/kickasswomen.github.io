@@ -161,5 +161,26 @@ export default {
             photo: require('./warren.jpg'),
             sprint: 'w',
         },
+        {
+            name: 'X',
+            identity: 'x',
+            content: require('./x.md'),
+            photo: require('./x.jpg'),
+            sprint: 'x',
+        },
+        {
+            name: 'Yousafzai',
+            identity: 'yousafzai',
+            content: require('./yousafzai.md'),
+            photo: require('./yousafzai.jpg'),
+            sprint: 'y',
+        },
+        {
+            name: 'Zora',
+            identity: 'zora',
+            content: require('./zora.md'),
+            photo: require('./zora.jpg'),
+            sprint: 'z',
+        },
     ],
 };

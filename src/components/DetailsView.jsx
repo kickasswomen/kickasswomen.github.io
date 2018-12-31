@@ -21,6 +21,9 @@ export const DetailsView = ({ female }) => {
             <div className="report-wrapper">
                 <div dangerouslySetInnerHTML={{ __html: female.content }} />
             </div>
+            <p className="disclaimer">
+                <em>*The views expressed here are my own, and may not be representative of Research Square.</em>
+            </p>
         </div>
     );
 };
